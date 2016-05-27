@@ -11,13 +11,13 @@ public class MessageService{
 	= new ConcurrentHashMap<Integer, String>();
 	
 	// 这两个方法未使用缓存
-//	public String getMessage(Integer id) {
-//		System.out.println("Getting data from SOR......");
-//		return messages.get(id);
-//	}
-//	public void setMessage (Integer id, String message){
-//		messages.put(id, message);
-//	}
+	public String getMessage(Integer id) {
+		System.out.println("Getting data from SOR......");
+		return messages.get(id);
+	}
+	public void setMessage (Integer id, String message){
+		messages.put(id, message);
+	}
 	
 	// 这两个方法使用缓存
 //	@Cacheable(cacheName = "messageCache", selfPopulating = true)
